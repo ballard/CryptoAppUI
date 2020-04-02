@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol CoinsFetchable {
+public protocol CoinsFetchable {
     func fetchCoins(_ completion: @escaping ([CoinItem]?)->Void)
 }

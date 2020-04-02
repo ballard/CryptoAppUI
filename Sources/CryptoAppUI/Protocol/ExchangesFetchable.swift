@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol ExchangesFetchable {
+public protocol ExchangesFetchable {
     func fetchExchangesFromPage(_ page: Int, withLimit limit: Int, withCompletion completion: @escaping ([ExchangeItem]?)->Void)
 }

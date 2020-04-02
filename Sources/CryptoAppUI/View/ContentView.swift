@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+public struct ContentView: View {
     
     @State private var selectorIndex = 0
     @State private var numbers = ["Coins","Exchanges"]
@@ -17,7 +17,7 @@ struct ContentView: View {
         return Text(numbers[selectorIndex].stringValue)
     }
     
-    var body: some View {
+    public var body: some View {
         NavControllerView(transition: .custom(.moveAndFadeIn, .moveAndFafeOut)) {
             NavigationView {
                 VStack {
