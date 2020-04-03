@@ -10,6 +10,8 @@ import SwiftUI
 
 public struct ContentView: View {
     
+    public init() {}
+    
     @State private var selectorIndex = 0
     @State private var numbers = ["Coins","Exchanges"]
     

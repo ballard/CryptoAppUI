@@ -10,7 +10,7 @@ import Foundation
 
 extension ExchangeItem: Identifiable {}
 
-final class ExchangesListViewModel: ObservableObject {
+public final class ExchangesListViewModel: ObservableObject {
     
     @Published private(set) var items: [ExchangeItem] = [ExchangeItem]()
     @Published private(set) var page: Int = 0
@@ -18,7 +18,7 @@ final class ExchangesListViewModel: ObservableObject {
     
     let exchangesService: ExchangesFetchable
     
-    init(service: ExchangesFetchable) {
+    public init(service: ExchangesFetchable) {
         self.exchangesService = service
     }
     

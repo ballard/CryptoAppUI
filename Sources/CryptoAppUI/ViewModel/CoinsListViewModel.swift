@@ -10,14 +10,14 @@ import Foundation
 
 extension CoinItem: Identifiable {}
 
-final class CoinsListViewModel: ObservableObject {
+public final class CoinsListViewModel: ObservableObject {
     
     @Published private(set) var items = [CoinItem]()
     @Published private(set) var isLoading = false
     
     let coinsService: CoinsFetchable
     
-    init(service: CoinsFetchable) {
+    public init(service: CoinsFetchable) {
         self.coinsService = service
     }
     
