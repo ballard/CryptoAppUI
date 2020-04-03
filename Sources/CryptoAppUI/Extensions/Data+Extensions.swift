@@ -6,8 +6,7 @@
 //  Copyright © 2020 Иван Лазарев. All rights reserved.
 //
 
-import Foundation
-import UIKit
+import SwiftUI
 
 extension Data {
     func image() -> UIImage {

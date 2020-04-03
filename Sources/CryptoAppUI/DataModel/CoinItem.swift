@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 public struct CoinItem: Codable {
 
     public var id: String

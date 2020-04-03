@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 public struct ExchangeItem: Codable {
 
     public var id: String
